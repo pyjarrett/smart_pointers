@@ -17,11 +17,11 @@ is
     type Reference_Count is new Integer;
     package Atomic_Integer is new Atomic.Signed (Reference_Count);
 
-    function Make (Allocated : T_Access) return Arc
-        with Post => Is_Valid (Make'Result);
+    function Make_Arc (Allocated : T_Access) return Arc
+        with Post => Is_Valid (Make_Arc'Result);
 
-    function Make_Null return Arc
-        with Post => not Is_Valid (Make_Null'Result);
+    function Make_Null_Arc return Arc
+        with Post => not Is_Valid (Make_Null_Arc'Result);
 
     function Is_Valid (Self : Arc) return Boolean;
 

@@ -3,20 +3,20 @@ with Interfaces;
 package body Smart_Pointers is
     use all type Interfaces.Integer_32;
 
-    function Make (Allocated : T_Access) return Arc is
+    function Make_Arc (Allocated : T_Access) return Arc is
     begin
         return Arc' (Ada.Finalization.Controlled with
             Block => new Control_Block' (
                 Value => Allocated,
                 Count => Atomic_Integer.Init (1)));
-    end Make;
+    end Make_Arc;
 
-    function Make_Null return Arc is
+    function Make_Null_Arc return Arc is
     begin
         return Self : Arc do
             null;
         end return;
-    end Make_Null;
+    end Make_Null_Arc;
 
     function Get (Self : Arc) return Reference_Type is
     begin
