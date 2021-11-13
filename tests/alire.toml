@@ -1,0 +1,17 @@
+name = "smart_pointers_tests"
+description = "Shiny new project"
+version = "0.0.0"
+
+authors = ["Paul Jarrett"]
+maintainers = ["Paul Jarrett <jarrett.paul.young@gmail.com>"]
+maintainers-logins = ["pyjarrett"]
+
+executables = ["smart_pointers_tests"]
+[[depends-on]]  # Added by alr
+smart_pointers = "~0.0.0"  # Added by alr
+[[pins]]  # Added by alr
+smart_pointers = { path='../../smart_pointers' }   # Added by alr
+[[depends-on]]  # Added by alr
+trendy_test = "~0.0.2"  # Added by alr
+[[depends-on]]  # Added by alr
+atomic = "~0.4.1"  # Added by alr

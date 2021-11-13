@@ -1,0 +1,9 @@
+name = "smart_pointers"
+description = "Shiny new project"
+version = "0.0.0"
+
+authors = ["Paul Jarrett"]
+maintainers = ["Paul Jarrett <jarrett.paul.young@gmail.com>"]
+maintainers-logins = ["pyjarrett"]
+[[depends-on]]  # Added by alr
+atomic = "~0.4.1"  # Added by alr
