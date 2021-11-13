@@ -1,6 +1,5 @@
 with Ada.Numerics.Discrete_Random;
 with Trendy_Test.Assertions;
-with Ada.Text_IO;
 
 package body Smart_Pointers_Int.Test is
 
